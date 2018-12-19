@@ -39,7 +39,7 @@ import java.io.IOException;
  * @version $Id$
  * @since 1.0
  */
-@Mojo( name = "sign", defaultPhase = LifecyclePhase.PACKAGE )
+@Mojo( name = "sign", defaultPhase = LifecyclePhase.PACKAGE, threadSafe = true )
 public class JarsignerSignMojo
     extends AbstractJarsignerMojo
 {
